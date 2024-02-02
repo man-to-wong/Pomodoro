@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='container'>
+        <img id='settings' src="https://openclipart.org/image/800px/234562" logo="settings" onclick="openSettings()"/>
+        <p id='countdown'></p>
+        <button id=start class="button-4" role="button">Start</button>
+    </div>
+        <div id='settingWindow'><p id='settingsLabel'>Einstellungen</p>
+            <img id='backIcon'src='https://www.shutterstock.com/image-vector/user-interface-ui-ux-back-600nw-1414395617.jpg' logo='back' onclick='closeSettings()'/>
+        <div id='settingsContainer'>  
+            <div id='labelDiv'>
+                <label id='cycleLabel'>Intervall:</label>
+                <label id='pauseLabel'>Pausenzeit:</label>
+                <label id='longPauseLabel'>Lange Pause:</label>
+                <label id='longPauseIntervallLabel'>Long break interval:</label>
+                <button id='save' onclick='saveIntervals()' class="button-4" role="button">Speichern</button>
+            </div>   
+            <div id='inputDiv'> 
+                <input id='cycleInput' value="25"/>
+                <input id='pauseInput' value="5"/>
+                <input id='longPauseInput' value="10"/>
+                <input id='longPauseIntervall' value="2"/>
+            </div>    
+        </div>       
+    <script src='./pomodoro.js'></script>   
+</body>
+</html>

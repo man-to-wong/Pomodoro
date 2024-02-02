@@ -1,0 +1,166 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 250px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  position: relative;
+  bottom: 200px;
+  font-family: 'Chakra Petch';
+  color: white;
+  font-size: 60px
+}
+
+#start {
+  width: 180px;
+  height: 60px;
+  font-family: 'Chakra Petch';
+  font-weight: 500;
+  position: relative;
+  bottom: 40px;
+}
+
+#settings {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 26px;
+  bottom: 240px;
+  right: 450px;
+  left: 25px
+}
+
+#settingsLabel {
+  font-family: 'Chakra Petch';
+  margin: 20px 0px 0px 60px
+}
+
+#settingWindow {
+  display: none;
+  flex-direction: row;
+  background-color: white;
+  border: 10px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 250px;
+  width: 500px;
+  position: relative;
+  bottom: 200px;
+}
+
+#backIcon {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  bottom: 190px;
+  left: 8px;
+  top: 8px;
+}
+
+#settingsContainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Chakra Petch';
+}
+
+input {
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin-bottom: 10px;
+  font-family: 'Chakra Petch';
+}
+
+#labelDiv {
+  height: 20px;
+  width: 180px;
+
+}
+
+#InputDiv {
+  height: 100px;
+  width: 120px;
+}
+
+#save {
+  margin-top: 2px;
+}
+
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(52, 63, 75, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #f0ecec;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #e4e1e1;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #e9e5e5;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
